@@ -7,7 +7,7 @@ class test(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Chrome(executable_path='C:/Users/Dell Xps/Downloads/chromedriver.exe')
+        cls.driver = webdriver.Chrome(executable_path='../drivers/chromedriver.exe')
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
         cls.driver.get("https://vladimirwork.github.io/web-ui-playground/")
